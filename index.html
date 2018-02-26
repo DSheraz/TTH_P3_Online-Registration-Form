@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Code Review</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Titillium+Web" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header class="main-header">
+      <h1>The Code Review</h1>
+    </header>
+
+    <form action="index.html" method="post" class="flex">
+      <h2>Signup for our newsletter</h2>
+      <h4 class="border">Get the latest news on how your code is doing right in your inbox</h4>
+
+      <fieldset class="contact clearfix flex border">
+        <legend>Contact Information</legend>
+
+        <div>
+          <label for="name" >Full Name</label>
+          <input class="info" type="text" id="name" name="user_name" placeholder="Required" required>
+        </div>
+
+        <div>
+          <label for="email" >Email Adress</label>
+          <input class="info" type="email" id="email" name="user_email" placeholder="Required" required>
+        </div>
+
+        <div>
+          <label for="phone" >Phone Number</label>
+          <input class="info" type="tel" id="phone" name="user_phone" placeholder="Phone Number">
+        </div>
+
+        <div>
+          <label for="address" >Street Address</label>
+          <input class="info" type="text" id="address" name="user_address" placeholder="Street Adress">
+        </div>
+
+        <div>
+          <label for="city" >City</label>
+          <input class="info" type="text" id="city" name="user_city" placeholder="City">
+        </div>
+
+        <div>
+          <label for="state" >State</label>
+          <select class="info" id="state" name="user_state">
+            <option selected="selected" class="state_ph">Choose State</option>
+            <optgroup label="States">
+              <option>Johor</option>
+              <option>Kedah</option>
+              <option>Kelantan</option>
+              <option>Melaka</option>
+              <option>Negeri Sembilan</option>
+              <option>Pahang</option>
+              <option>Perak</option>
+              <option>Perlis</option>
+              <option>Sabah</option>
+              <option>Sarawak</option>
+              <option>Selangor</option>
+              <option>Terengganu</option>
+            </optgroup>
+            <optgroup label="Federal Territories">
+              <option>Kuala Lumpur</option>
+              <option>Labuan</option>
+              <option>Putrajaya</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div>
+          <label for="zip" >Zip Code</label>
+          <input class="info zip" type="number" id="zip" name="user_zip" placeholder="Zip Code">
+        </div>
+      </fieldset>
+      <fieldset class="newsletter flex">
+        <legend>Newsletter</legend>
+
+        <label>Select the newsletters you would like to recieve</label>
+        <div>
+          <input type="checkbox" id="html_news" value="html_news" name="user_newsletters"><label for="html_news">HTML News</label>
+        </div>
+        <div>
+          <input type="checkbox" id="css_news" value="css_news" name="user_newsletters"><label for="css_news">CSS News</label>
+        </div>
+        <div>
+          <input type="checkbox" id="javascript_news" value="javascript_news" name="user_newsletters"><label for="javascript_news">Javascript News</label>
+        </div>
+
+        <label>Newsletter format</label>
+        <div>
+          <input type="radio" id="html_format" value="html_format" name="user_format"><label for="html_format">HTML</label>
+        </div>
+        <div>
+          <input type="radio" id="plain_text_format" value="plain_text_format" name="user_format"><label for="plain_text_format">Plain Text</label>
+        </div>
+
+        <label for="other_topics">Other topics you'd like to hear about</label>
+        <textarea class="info txt" id="other_topics" name="user_other_topics"></textarea>
+
+      </fieldset>
+
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <footer>
+      <h5>Copyright The Code Review</h5>
+    </footer>
+  </body>
+</html>
